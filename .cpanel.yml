@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/epatkhiy/sub-domains/icons-bked/
+    - /bin/cp -R * $DEPLOYPATH
