@@ -4,7 +4,7 @@ name: Update To C Panel on push
 on: push
 jobs:
   FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+    name: Updating to C Panel 
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
