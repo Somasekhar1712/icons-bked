@@ -44,8 +44,8 @@ class icons(APIView):
         try:
             name = post_body.get("name")
             code = post_body.get("code")
-            nameGet = Icons.objects.get(name)
-            print("this is name", nameGet)
+            # nameGet = Icons.objects.get(name)
+            # print("this is name", nameGet)
 
             if Icons.objects.filter(code=code).values():
                 print(True)
