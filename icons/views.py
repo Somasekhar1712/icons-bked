@@ -5,7 +5,6 @@ import subprocess
 from django.http import JsonResponse
 from django.shortcuts import render
 from rest_framework.views import APIView
-
 from .models import Icons
 # Create your views here.
 
@@ -44,6 +43,7 @@ class icons(APIView):
         try:
             name = post_body.get("name")
             code = post_body.get("code")
+            type = post_body.get("type")
             # nameGet = Icons.objects.get(name)
             # print("this is name", nameGet)
 
@@ -52,7 +52,7 @@ class icons(APIView):
                 return JsonResponse({"status": "success", "icons": "this icon record already exits"})
             else:
                 print(False)
-                Icons.objects.create(name=name, code=code)
+                Icons.objects.create(name=name, code=code, type=type)
                 return JsonResponse({"status": "success", "icons": "icons created successfully"})
 
         except Exception as exc:
