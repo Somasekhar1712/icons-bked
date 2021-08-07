@@ -25,7 +25,8 @@ SECRET_KEY = 'a4$gaa&yziy1)=k95xdg0-ronsy%452#rab_m%x7d!4$ueo(gx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*","icons-bked.epathpro.com"]
+ALLOWED_HOSTS = ["*", "localhost:4200",
+                 "icons-bked.epathpro.com", "icons.epathpro.com"]
 
 
 # Application definition
